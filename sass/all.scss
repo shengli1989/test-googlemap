@@ -1,0 +1,9 @@
+@import "basic";
+
+// 本專案專屬 scss
+@import "layout";
+@import "typography";
+
+// partials
+@import "partials/nav";
+@import "partials/main";

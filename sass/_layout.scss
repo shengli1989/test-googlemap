@@ -1,0 +1,22 @@
+// basic for susy
+$total-columns  : 12;
+$column-width   : 60px;
+$gutter-width   : 20px;
+$grid-padding   : 20px;
+
+
+.page {
+  overflow: hidden;
+  min-height: 600px;
+  @include container;
+  // @include susy-grid-background;
+  // @include baseline-grid-background;
+}
+
+.nav {
+  @include span-columns(3, $total_columns);
+}
+
+.main {
+  @include span-columns(9 omega, $total_columns);
+}

@@ -1,0 +1,57 @@
+// compass-variables
+$base-font-size: 16px;
+$base-line-height: 24px;
+$legacy-support-for-ie: false;
+$relative-font-sizing: false;
+$grid-background-baseline-height: $base-line-height;
+
+// color
+$color-black: #252525;
+$color-gray: #999;
+$color-lighter-gray: #eee;
+$color-blue: #369;
+$color-red: #ae3941;
+
+
+// Global ==============================
+
+// text
+$global-color: $color-black;
+$global-muted-color: $color-gray;
+
+$global-link-color: $color-blue;
+$global-link-hover-color: darken($color-blue, 20%);
+
+// background & border
+$global-background: white;
+$global-spectail-block: #fafafa;
+$global-divider: $color-lighter-gray;
+
+
+// Typography ======================
+
+// font-family
+$font-family-sans-serif:  "HelveticaNeue-Light", "Helvetica", "Arial", sans-serif;
+
+// font-size
+$font-size-xxl: $base-font-size * 2;
+$font-size-xl: $base-font-size * 1.5;
+$font-size-l: $base-font-size * 1.25;
+$font-size-m: $base-font-size * 1;
+$font-size-s: $base-font-size * .875;
+$font-size-xs: $base-font-size * .75;
+
+
+// Table =====================
+$table-divider: $global-divider;
+$table-caption-size: $font-size-l;
+$table-padding-vertical: 6px;
+$table-padding-horizontal: 6px;
+$table-total-columns: 10;
+$table-striped-bg: $global-spectail-block;
+
+
+// Form =====================
+$form-height: $base-line-height * 1.25;
+$form-color: $global-muted-color;
+$form-border: $global-divider;

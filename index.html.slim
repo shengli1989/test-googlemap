@@ -1,0 +1,116 @@
+.main-block
+  h2.main-title Typography
+  p= lorem_paragraph
+
+.main-block
+  h3.main-block-title Heading h1 ~ h6
+  h1 This is Heading 1
+  h2 This is Heading 2
+  h3 This is Heading 3
+  h4 This is Heading 4
+  h5 This is Heading 5
+  h6 This is Heading 6
+
+
+.main-block
+  h3.main-block-title Paragraph
+  p= lorem_paragraphs(2)
+
+
+
+.main-block
+  h3.main-block-title Blockquote
+  blockquote
+    = lorem_paragraph
+    cite= lorem_name
+  markdown:
+    slim code:
+
+        blockquote
+          = lorem_paragraph
+          cite= lorem_name
+
+
+
+.main-block
+  h3.main-block-title Address
+  address
+    |You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.
+    br
+    |If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.
+
+.main-block
+  h3.main-block-title Code block
+  pre: code= lorem_sentence
+
+  markdown:
+    slim code:
+
+        pre: code= lorem_sentence
+
+
+
+.main-block
+  h3.main-block-title List
+  h4.main-block-sub-title Order list
+  ol
+    - 3.times do
+      li= lorem_sentence
+    li
+      = lorem_sentence
+      ol
+        - 3.times do
+          li= lorem_sentence
+    - 2.times do
+      li= lorem_sentence
+  h4.main-block-sub-title Unordered list
+  ul
+    - 3.times do
+      li= lorem_sentence
+    li
+      = lorem_sentence
+      ul
+        - 3.times do
+          li= lorem_sentence
+    - 2.times do
+      li= lorem_sentence
+  h4.main-block-sub-title Definition Lists
+  dl
+    -3.times do
+      dt= lorem_sentence
+      dd= lorem_sentence
+      dd= lorem_sentence
+
+
+.main-block
+  h3.main-block-title Inline style
+  p
+    span This is <i> i element </i> example. 斜體
+    br
+    span This is <b> b element </b> example. 粗體
+    br
+    span This is <u> u element </u> example. 底線
+    br
+    span This is <a> a element </a> example 超連結
+    br
+    span This is <em> em element </em> example 重要
+    br
+    span This is <cite> cite element </cite> example 引言作者
+    br
+    span This is <strong> strong element </strong> example 重要
+    br
+    span This is <del> del element </del> example 刪除
+    br
+    span This is <ins> ins element </ins> example 插入
+    br
+    span This is <kbd> kbd element </kbd> example 鍵盤
+    br
+    span This is <sub> sub element </sub> example 下
+    br
+    span This is <sup> sup element </sup> example 上
+    br
+    span This is <small> small element </small> example 不顯眼小字
+    br
+    span This is <abbr title="qeqwe"> abbr element </abbr> example 註解
+    br
+    span This is <code> code element </code> example 程式碼

@@ -1,0 +1,36 @@
+.main {
+  @include padding-leader(2);
+  @include trailer(2);
+}
+
+.main-inner {
+  padding: 0 $grid-padding;
+}
+
+.main-block {
+  & + & {
+    @include padding-leader(2);
+    @include leader(2);
+    border-top: 1px solid $color-lighter-gray;
+  }
+}
+
+
+.main-title {
+  @include adjust-font-size-to($font-size-xxl);
+  font-weight: bold;
+}
+
+.main-block-title {
+  @include trailer(1);
+  font-size: $font-size-xl;
+  line-height: 1em;
+  font-weight: normal;
+}
+
+.main-block-sub-title {
+  @include trailer(1);
+  font-size: $font-size-l;
+  line-height: 1em;
+  font-weight: normal;
+}

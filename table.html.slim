@@ -1,0 +1,55 @@
+.main-block
+  h2.main-title Table
+  p= lorem_paragraph
+
+.main-block
+  h3.main-block-title Default Table
+  p 預設表格樣式
+  table
+    caption This is caption.
+    thead
+      tr
+        - 4.times do
+          th Table title
+    tbody
+      - 3.times do
+        tr
+          - 4.times do
+            td Table data
+    tfoot
+      tr
+        - 4.times do
+          td Table foot
+
+  markdown:
+    slim code:
+
+        table
+          thead
+            tr
+              - 4.times do
+                th Table title
+          tbody
+            - 3.times do
+              tr
+                - 4.times do
+                  td Table data
+          tfoot
+            tr
+              - 4.times do
+                td Table foot
+
+.main-block
+  h3.main-block-title Striped Table
+  p 條紋表格樣式
+  table.striped
+    thead
+      tr
+        - 4.times do
+          th Table title
+    tbody
+      - 3.times do
+        tr
+          - 4.times do
+            td Table data
+

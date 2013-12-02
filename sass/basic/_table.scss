@@ -1,0 +1,57 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse:collapse;
+}
+
+caption {
+  font-weight: bold;
+  @include adjust-font-size-to($table-caption-size);
+}
+
+th {
+  border-bottom: 1px solid $table-divider;
+  padding: $table-padding-vertical $table-padding-horizontal ;
+}
+
+td {
+  border-bottom: 1px solid $table-divider;
+  padding: $table-padding-vertical $table-padding-horizontal;
+}
+
+thead {
+  th {
+    text-align: left;
+  }
+}
+
+tbody {
+  td {
+
+  }
+}
+
+tfoot {
+  td {
+    border-bottom: none;
+  }
+}
+
+// table-columns
+table {
+  @for $i from 1 through $table-total-columns {
+    .col-#{$i}-#{$table-total-columns} {
+      width: ($i / $table-total-columns) * 100%;
+    }
+  }
+}
+
+
+// striped
+table.striped {
+ tbody {
+  tr:nth-child(odd) td{
+    background-color: $table-striped-bg;
+  }
+ }
+}
